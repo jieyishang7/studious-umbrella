@@ -15,7 +15,14 @@ let API_ENDPOINT = `https://api.openweathermap.org/data/2.5/weather?zip=${zipcod
 
         document.querySelector(".temperature").textContent = Math.round(data.main.temp) + "°C";
         document.querySelector(".city_name").textContent = data.name;
-        img.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+
+        if (data.weather && data.weather[0] && data.weather[0].icon) {
+          img.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+          img.style.display = "block";
+        } else {
+          img.src = "";
+          img.style.display = "none";
+        }
     })
     .catch((error) => {
       console.error("error:", error);

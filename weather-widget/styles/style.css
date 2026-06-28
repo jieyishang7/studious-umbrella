@@ -57,7 +57,7 @@ input::placeholder{
 }
 
 .weather-icon {
-  display: block;
+  display: none;
   width: 80px;
   height: 80px;
   margin: 12px auto 0;
