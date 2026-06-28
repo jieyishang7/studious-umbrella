@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
 html,
 body {
   height: 100%;
@@ -43,7 +42,7 @@ input::placeholder{
   border: 1px solid #f4f4f4;
 }
 
-.output-container {
+.output_component{
   position: absolute;
   top: 60%;
   left: 50%;
@@ -54,5 +53,6 @@ input::placeholder{
   text-align: center;
   font-size: 3em;
   line-height: 1.2em;
-  color: white; 
+  color: white;
 }
+

@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css">
+    <title>Weather Widget</title>
 </head>
 <body>
-<div class="container">
+
+          <div class="container">
   <div class="input-container">
     <form>
-      <input type="text" class="zipcode" placeholder="type zipcode here">
-      <button type="button" class="search-button">Search</button>
-    </form>
-  </div>
-  <div class="output-container">
-    <h2 class="city_name">New York</h2>
-    <p class="temperature">34°C</p>
-  </div>
- </div>
-<script src="config.js"></script>
-<script src="javascript/main.js"></script>
+            <input type="text" class="zipcode" placeholder="Enter zipcode">
+            <button type="button" class="search-button">Search</button>
+        </form>
+</div>
+        <div class="output-container">
+            <h2 class="temperature"></h2>
+            <p class="city_name"></p>
+        </div>
+</div>
+    <script src="config.js"></script>
+    <script src="javascript/main.js"></script>
 </body>
 </html>
